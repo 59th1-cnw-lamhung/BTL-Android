@@ -1,0 +1,2 @@
+rootProject.name='btl_android_v1'
+include ':app'
