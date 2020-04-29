@@ -1,5 +1,6 @@
 package com.example.btl_android_v1.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -29,13 +30,13 @@ public class HistoryExam_Activity extends AppCompatActivity {
     AdapterRecyclerViewHistory adapterRecyclerViewLichSuBaiThi;
     List<Exam> listDeThi;
     Toolbar toolbar;
-    Button btn_menu;
+    Button btn_delete;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lichsubaithi1);
+        setContentView(R.layout.activity_lichsubaithi);
 
-        btn_menu = findViewById(R.id.btn_menu);
+        btn_delete = findViewById(R.id.btn_delete);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
@@ -50,10 +51,12 @@ public class HistoryExam_Activity extends AppCompatActivity {
         rcv_lichSuBaiThi.setAdapter(adapterRecyclerViewLichSuBaiThi);
         Log.d("SIZE",listDeThi.size()+"");
 
-        btn_menu.setOnClickListener(new View.OnClickListener() {
+        btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                deleFile("lichsu.txt");
+                Intent intent_load =new Intent(HistoryExam_Activity.this, HistoryExam_Activity.class);
+                startActivity(intent_load);
             }
         });
 
@@ -83,6 +86,13 @@ public class HistoryExam_Activity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
+        return listDeThi;
+    }
+
+    public List<Exam> deleFile(final String fileName){
+        File file = getFileStreamPath(fileName);
+        file.delete();
 
         return listDeThi;
     }

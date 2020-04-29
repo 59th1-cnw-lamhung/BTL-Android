@@ -3,20 +3,21 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:fontFamily="sans-serif-light">
 
 
     <LinearLayout
         android:id="@+id/ln1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
+            android:background="#FA9C19"
             android:popupTheme="@style/AppTheme"
             ads:theme="@style/ToolbarColoredBackArrow">
 
@@ -25,9 +26,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Thi bằng lái xe"
-                android:textColor="#fff"
-                android:textSize="@dimen/_17ssp" />
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="THI BẰNG LÁI XE"
+                android:textColor="#000"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal" />
         </android.support.v7.widget.Toolbar>
 
         <LinearLayout
@@ -49,26 +52,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_70sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_weight="1"
+                android:layout_height="160dp"
                 android:gravity="center"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_10sdp">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/bt_thiSatHach"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -78,10 +75,10 @@
                         android:layout_weight="1">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/o1" />
+                            android:src="@drawable/thisathach2" />
                     </LinearLayout>
 
                     <Button
@@ -96,47 +93,22 @@
                         android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
-
                 <LinearLayout
-                    android:id="@+id/bt_lyThuyet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <View
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:background="#ced5d5" />
 
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:clickable="false"
-                            android:src="@drawable/lythuyet" />
-                    </LinearLayout>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:clickable="false"
-                        android:gravity="center|center"
-                        android:text="HỌC LÝ THUYẾT"
-                        android:textAllCaps="false"
-                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/bt_bienBao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -146,10 +118,10 @@
                         android:layout_weight="1">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/bienbao" />
+                            android:src="@drawable/bienbao1" />
                     </LinearLayout>
 
                     <Button
@@ -162,58 +134,25 @@
                         android:text="BIỂN BÁO"
                         android:textAllCaps="false"
                         android:textSize="@dimen/_10ssp" />
+
                 </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_10sdp">
-
 
                 <LinearLayout
-                    android:id="@+id/bt_meoGhiNho"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <View
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:background="#ced5d5" />
 
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:clickable="false"
-                            android:src="@drawable/meoghinho" />
-                    </LinearLayout>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:clickable="false"
-                        android:gravity="center|center"
-                        android:text="MẸO GHI NHỚ"
-                        android:textAllCaps="false"
-                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/bt_meoThucHanh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -223,10 +162,10 @@
                         android:layout_weight="1">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/meothuchanh" />
+                            android:src="@drawable/meothuchanh1" />
                     </LinearLayout>
 
                     <Button
@@ -239,27 +178,46 @@
                         android:text="MẸO THỰC HÀNH"
                         android:textAllCaps="false"
                         android:textSize="@dimen/_10ssp" />
+
+
                 </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ced5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/bt_lichSuBaiThi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:clickable="true"
+                    android:id="@+id/bt_lyThuyet"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/lichsubaithi" />
+                            android:src="@drawable/lythuyet1" />
                     </LinearLayout>
 
                     <Button
@@ -269,13 +227,102 @@
                         android:background="@android:color/transparent"
                         android:clickable="false"
                         android:gravity="center|center"
-                        android:text="LS BÀI THI"
+                        android:text="LÝ THUYẾT"
                         android:textAllCaps="false"
                         android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ced5d5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_meoGhiNho"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
+                            android:clickable="false"
+                            android:src="@drawable/meoghinho1" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|center"
+                        android:text="MẸO GHI NHỚ"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ced5d5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_lichSuBaiThi"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="111dp"
+                            android:layout_height="111dp"
+                            android:clickable="false"
+                            android:src="@drawable/lichsu1" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|center"
+                        android:text="LỊCH SỬ BÀI THI"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_10ssp" />
+
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
+
 
     </LinearLayout>
 
