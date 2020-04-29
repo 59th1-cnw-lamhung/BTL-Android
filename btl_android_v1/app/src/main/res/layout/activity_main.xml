@@ -78,7 +78,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/thisathach2" />
+                            android:src="@drawable/img_thisathach" />
                     </LinearLayout>
 
                     <Button
@@ -121,7 +121,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/bienbao1" />
+                            android:src="@drawable/img_bienbao" />
                     </LinearLayout>
 
                     <Button
@@ -165,7 +165,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/meothuchanh1" />
+                            android:src="@drawable/img_meothuchanh" />
                     </LinearLayout>
 
                     <Button
@@ -217,7 +217,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/lythuyet1" />
+                            android:src="@drawable/img_lythuyet" />
                     </LinearLayout>
 
                     <Button
@@ -261,7 +261,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/meoghinho1" />
+                            android:src="@drawable/img_meoghinho" />
                     </LinearLayout>
 
                     <Button
@@ -305,7 +305,7 @@
                             android:layout_width="111dp"
                             android:layout_height="111dp"
                             android:clickable="false"
-                            android:src="@drawable/lichsu1" />
+                            android:src="@drawable/img_lichsu" />
                     </LinearLayout>
 
                     <Button
