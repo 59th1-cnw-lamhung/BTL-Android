@@ -28,21 +28,22 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'//thư viện hỗ trợ, cung cấp 1 khung để thử nghiệm các ứng dụng Android
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:cardview-v7:26.0.0'
-    implementation 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
-    implementation 'com.android.support:recyclerview-v7:26.0.0'
-    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
-    implementation 'ca.barrenechea.header-decor:header-decor:0.2.8'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
-    implementation 'me.everything:overscroll-decor-android:1.0.4'
-    implementation 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
-    implementation 'com.intuit.sdp:sdp-android:1.0.5'
-    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    implementation 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'// tiêu đề recyclerview
+    implementation 'com.android.support:recyclerview-v7:26.0.0'// thư viện hỗ trợ để có thể sử dụng recyclerview
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'// thư viện làm việc với database
+    implementation 'ca.barrenechea.header-decor:header-decor:0.2.8'// thư viện hỗ trợ chú thích tiêu đề
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'// thư viện hỗ trợ chạy và xem gif trên android
+    implementation 'me.everything:overscroll-decor-android:1.0.4'//thư viện hỗ trợ hiệu ứng cuộn
+    implementation 'com.bartoszlipinski:recyclerviewheader2:2.0.1'//thư viện tạo tiêu đề cho recyclerview nằm trong nhóm thư viện bartoszlipinski
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'//thư viện hỗ trợ đơn vị kích thước có thể mở rộng trong android
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'//thư viện hỗ trợ đơn vị kích thước có thể mở rộng trong android
     implementation 'com.google.android.gms:play-services-ads:10.0.0'
 
-    implementation 'com.synnapps:carouselview:0.1.5'
+    implementation 'com.synnapps:carouselview:0.1.5'//thư viện hỗ sợ tạo slide
+    implementation 'com.android.support:design:26.0.0'
 
 
 

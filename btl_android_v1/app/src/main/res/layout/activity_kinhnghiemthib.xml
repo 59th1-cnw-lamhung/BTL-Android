@@ -7,14 +7,15 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="#FA9C19"
         app:theme="@style/ToolbarColoredBackArrow"
         android:popupTheme="@style/AppTheme"
         >
     </android.support.v7.widget.Toolbar>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#fff">
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_height="match_parent"

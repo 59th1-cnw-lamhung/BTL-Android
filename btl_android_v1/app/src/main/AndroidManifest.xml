@@ -14,75 +14,87 @@
             android:screenOrientation="portrait"
             >
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Noticeboard_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.BienBao_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Biển báo"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Theory_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.LyThuyet_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Lý thuyết"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Memorize_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.MeoGhiNho_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Mẹo ghi nhớ"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Practice1_Activity"
+
+
+        <activity android:name="com.example.btl_android_v1.Activities.LuatGT_Activity"
+            android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
+            android:label="Luật giao thông"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+        <activity android:name="com.example.btl_android_v1.Activities.MeoThucHanhA_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Mẹo thực hành"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Practice2_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.MeoThucHanhB_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Mẹo thực hành"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Experience1_Activity"
-            android:parentActivityName="com.example.btl_android_v1.Activities.Practice1_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.KinhNghiemThiA_Activity"
+            android:parentActivityName="com.example.btl_android_v1.Activities.MeoThucHanhA_Activity"
             android:label="Kinh nghiệm thi"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Experience2_Activity"
-            android:parentActivityName="com.example.btl_android_v1.Activities.Practice2_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.KinhNghiemThiB_Activity"
+            android:parentActivityName="com.example.btl_android_v1.Activities.MeoThucHanhB_Activity"
             android:label="Kinh nghiệm thi"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Examination_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.ThiSatHach1_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Thi sát hạch"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Result_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.KetQua_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Kết quả thi"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.Answer_Activity"
-            android:parentActivityName="com.example.btl_android_v1.Activities.Result_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.DapAn_Activity"
+            android:parentActivityName="com.example.btl_android_v1.Activities.KetQua_Activity"
             android:label="Xem lại đáp án"
             android:screenOrientation="portrait"
             >
         </activity>
-        <activity android:name="com.example.btl_android_v1.Activities.HistoryExam_Activity"
+        <activity android:name="com.example.btl_android_v1.Activities.LichSuBT_Activity"
             android:parentActivityName="com.example.btl_android_v1.Activities.MainActivity"
             android:label="Lịch sử bài thi"
             android:screenOrientation="portrait"

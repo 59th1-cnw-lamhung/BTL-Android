@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="#FA9C19"
         app:theme="@style/ToolbarColoredBackArrow"
         android:popupTheme="@style/AppTheme"
         >
@@ -37,7 +37,7 @@
         android:layout_marginTop="@dimen/_16sdp"
         android:text="Xem lại đáp án"
         android:textAllCaps="false"
-        android:background="@drawable/button_dethi"
+        android:background="#FA9C19"
         android:textColor="#fff"
         />
     <Button
@@ -47,7 +47,7 @@
         android:layout_marginTop="@dimen/_12sdp"
         android:text="Làm bộ đề thi khác"
         android:textAllCaps="false"
-        android:background="@drawable/button_dethi"
+        android:background="#FA9C19"
         android:textColor="#fff"
         />
 </LinearLayout>
